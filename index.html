@@ -148,57 +148,58 @@
             </section>
             <hr>
             <section id="entry-form">
-                <h3>Would you like to schedule a meeting with me?</h3>
+                <h3>Create a new journal entry ✍🏻</h3>
                 <form>
-                    <label for="day">Choose a day:</label>
+                    <label for="day">Journal Entry Date:</label>
                     <input type="date" id="day" name="day" required>
                     <fieldset>
-                        <legend>What would you like to talk about?</legend>
-                        <input type="checkbox" id="research" name="topic">
-                        <label for="research">Research</label>
+                        <legend>What are you thankful for today?</legend>
+                        <input type="checkbox" id="family" name="thankful">
+                        <label for="family">Family</label>
                         <br>
-                        <input type="checkbox" id="ai" name="topic">
-                        <label for="ai">How to Join ACM AI</label>
+                        <input type="checkbox" id="girlfriend" name="thankful">
+                        <label for="girlfriend">My girlfriend</label>
                         <br>
-                        <input type="checkbox" id="recipes" name="topic">
-                        <label for="recipes">Food Recipe Ideas</label>
+                        <input type="checkbox" id="food" name="thankful">
+                        <label for="food">Good Food</label>
                         <br>
-                        <input type="checkbox" id="life" name="topic">
-                        <label for="life">Life Advice</label>
+                        <input type="checkbox" id="health" name="thankful">
+                        <label for="health">Good Health</label>
                         <br>
-                        <input type="checkbox" id="different" name="topic">
-                        <label for="different">Something different</label>
+                        <input type="checkbox" id="friendships" name="thankful">
+                        <label for="friendships">Good friendships</label>
                     </fieldset>
-                    <fieldset>
-                        <legend>Which time works best for you?</legend>
-                        <input type="radio" id="one" name="time">
-                        <label for="one">1 PM (PT)</label>
-                        <br>
-                        <input type="radio" id="two" name="time">
-                        <label for="two">2 PM (PT)</label>
-                        <br>
-                        <input type="radio" id="three" name="time">
-                        <label for="three">3 PM (PT)</label>
-                        <br>
-                        <input type="radio" id="four" name="time">
-                        <label for="four">4 PM (PT)</label>
-                        <br>
-                        <input type="radio" id="five" name="time">
-                        <label for="five">5 PM (PT)</label>
-                    </fieldset>
-                    <label for="other-time">Need to meet at a different time? Let me know your times of availability here:</label>
-                    <input type="text" name="other-time" id="other-time">
+                    <label for="thankful">Thankful for something different? What is it?</label>
+                    <input type="text" name="thankful" id="thankful">
                     <br>
-                    <label for="stress">How stressed have you been lately?</label>
-                    <select id="stress">
-                        <option value="">Select Stress Level</option>
-                        <option value="low">Low Stress</option>
-                        <option value="mid">Average Stress</option>
-                        <option value="high">Highly Stressed</option>
-                        <option value="extreme">Extremely Stressed</option>
+                    <fieldset>
+                        <legend>What do you wish you could do <b>most</b> today?</legend>
+                        <input type="radio" id="relax" name="wish">
+                        <label for="relax">Relax more</label>
+                        <br>
+                        <input type="radio" id="beach" name="wish">
+                        <label for="beach">Be at the Beach</label>
+                        <br>
+                        <input type="radio" id="fam" name="wish">
+                        <label for="fam">Be with family</label>
+                        <br>
+                        <input type="radio" id="friends" name="wish">
+                        <label for="friends">Be with friends</label>
+                        <br>
+                        <input type="radio" id="gf" name="wish">
+                        <label for="gf">Be with girlfriend</label>
+                    </fieldset>
+                    <br>
+                    <label for="hope">What do you hope to do tomorrow?</label>
+                    <select id="hope">
+                        <option value="">Select Option</option>
+                        <option value="work">Get a lot of work done</option>
+                        <option value="sleep">Sleep in</option>
+                        <option value="exercise">Exercise outside</option>
+                        <option value="socialize">Socialize with close ones</option>
                     </select>
                     <br>
-                    <label for="meeting-media">Have some media I should check out? Select the media type here:</label>
+                    <label for="meeting-media">What kind of media are you uploading today? Choose here:</label>
                     <input list="user-media" id="meeting-media" name="meeting-media">
                     <datalist id="user-media">
                         <option value="audio">Audio</option>
@@ -206,14 +207,15 @@
                         <option value="video">Video</option>
                     </datalist>
                     <br>
-                    <label for="before-meeting">Anything else I should know before our meeting?</label>
+                    <label for="before-meeting">What's something you are proud you did today?</label>
                     <br>
                     <textarea id="before-meeting" name="before-meeting"></textarea>
                     <br>
-                    <button>Submit Meeting Request</button>
+                    <button>Submit Journal Entry</button>
                 </form>
             </section>
         </main>
+        <hr>
         <footer>
             Thanks for visiting my site! 😄
         </footer>
