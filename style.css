@@ -1,0 +1,44 @@
+* { /* Apply Open Sans to all elements on the page with Universal Selector */
+    font-family: "Open Sans", "Roboto", "Lato";
+}
+
+h1 { /* apply to all h1 elements */
+    position: relative;
+    background-color: #2f4f4f; /* hex code */
+    color: whitesmoke; /* color name */
+    width: 99%;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 2mm;
+    border-radius: 15px;
+    padding: 10pt 0pt 10pt 0pt;
+}
+
+h2 { /* apply to all h2 elements */
+    position: static;
+    background-color:rgb(30, 144, 255); /* red, green, blue values */
+    color: hsl(0, 0%, 100%); /* hue, saturation, lightness values */
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    text-decoration: underline overline;
+    text-align: start;
+    padding: 15px 0px 15px 0px;
+}
+
+#nav-content { /* apply to the page's nav with ID selector*/
+    position: sticky;
+    padding-top: 20px;
+    background-color: lightgray; /* color name */
+    border-style: solid;
+    border-color: navy;
+    border-width: .15cm;
+    border-radius: 10px;
+}
+
+#april9th {
+    color: darkred;
+}
