@@ -23,13 +23,21 @@ h2 { /* apply to all h2 elements */
     width: 100%;
 }
 
-h3 {
+.day { /* class selector for day entries */
     text-decoration: underline overline;
     text-align: start;
     padding: 15px 0px 15px 0px;
 }
 
-#nav-content { /* apply to the page's nav with ID selector*/
+h4 {
+    text-decoration: underline;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#nav-content { /* apply to the page's nav with ID selector */
     position: sticky;
     padding-top: 20px;
     background-color: lightgray; /* color name */
@@ -37,8 +45,46 @@ h3 {
     border-color: navy;
     border-width: .15cm;
     border-radius: 10px;
+    margin: auto;
 }
 
 #april9th {
     color: darkred;
+}
+
+audio[src="sleep.mp3"] {
+    width: 75vmin;
+    max-width: 75%;
+    display:block;
+}
+
+img:hover {
+    border-color: yellow;
+    border-width: 1vw;
+    border-style: solid;
+}
+
+img {
+    height: 40rem;
+    width: 30rem;
+    position: initial;
+    display: flex;
+}
+
+video {
+    max-height: 30rem;
+    max-width: 30rem;
+    display: inline-flex;
+}
+
+video:active {
+    border-color: hsl(0, 100%, 50%);
+    border-width: 1vw;
+    border-style: double;
+}
+
+@media only screen and (min-width: 100px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
 }
