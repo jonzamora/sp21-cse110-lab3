@@ -41,7 +41,7 @@ h4 {
     position: sticky;
     padding-top: 20px;
     background-color: lightgray; /* color name */
-    border-style: solid;
+    border-style: ridge;
     border-color: navy;
     border-width: .15cm;
     border-radius: 10px;
@@ -49,13 +49,25 @@ h4 {
 }
 
 #april9th {
-    color: darkred;
+    color: #8b0000;
+}
+
+#april10th {
+    color: darkblue;
+}
+
+#april11th {
+    color: rgb(0, 100, 0);
+}
+
+#entry-form {
+    color: #9400d3;
 }
 
 audio[src="sleep.mp3"] {
     width: 75vmin;
     max-width: 75%;
-    display:block;
+    display: block;
 }
 
 img:hover {
@@ -64,17 +76,19 @@ img:hover {
     border-style: solid;
 }
 
-img {
+img.pup {
     height: 40rem;
     width: 30rem;
     position: initial;
-    display: flex;
+    display: inline;
+    margin: 10px 10px 10px 10px;
 }
 
 video {
     max-height: 30rem;
     max-width: 30rem;
     display: inline-flex;
+    margin: 30px 30px 30px 30px;
 }
 
 video:active {
@@ -87,4 +101,64 @@ video:active {
     body {
         background-color: lightgoldenrodyellow;
     }
+}
+
+ul, ol, p {
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+ul li {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+details > summary {
+    background-color: whitesmoke;
+    width: 25%;
+}
+
+label ~ input {
+    background-color: hsl(203, 92%, 75%);
+    color: #ffffff;
+}
+
+hr + footer {
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 250px 250px 200px;
+    grid-template-rows: 50px 50px 50px;
+    column-gap: 5%;
+    align-items: center;
+}
+
+#name {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+#major {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#gradyear {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+#pup-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content:space-evenly;
+    flex-direction: row;
 }
