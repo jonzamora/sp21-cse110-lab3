@@ -1,2 +1,2 @@
-# Lab 2
-Link to Lab 2 Page: [Link](http://jonzamora.dev/Lab2/)
+# Lab 3
+Link to Lab 3 Page: https://jonzamora.dev/sp21-cse110-lab3/
